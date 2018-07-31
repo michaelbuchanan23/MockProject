@@ -15,8 +15,8 @@ namespace MockProject {
 		public string Zip { get; set; }
 		public string Phone { get; set; }
 		public string Email { get; set; }
-		public bool Recommended { get; set; }
-		public List<Product> Products = new List<Product>(); //creates a new dynamic array for assigning products to this vendor for the Student class
+		public bool IsPreApproved { get; set; }
+		public bool Active { get; set; }
 
 		public Product AddProduct(string Name, string VendorPartNumber, double Price, string Unit, string PhotoPath, string Vendor) {
 			Product prod = new Product();
